@@ -13,7 +13,7 @@ This system takes an image as input and generates a descriptive textual caption.
 
 ### Architecture:
 1. **CNN for Image Feature Extraction**:
-   - A CNN, like VGG16, processes the image and extracts a 2048-dimensional feature vector.
+   To extract features, we use the **Xception model** (pre-trained on ImageNet). Each image is resized to **299×299**, normalized, and passed through the model to generate a **2048-dimensional feature vector**.
    
 2. **LSTM for Caption Generation**:
    - The feature vector, along with previous words, is fed into an LSTM network to predict the next word in a sequence.
@@ -27,3 +27,5 @@ This system takes an image as input and generates a descriptive textual caption.
 - **NumPy**: Used for numerical operations and matrix manipulations.
 - **OpenCV**: For image processing tasks.
 - **Matplotlib**: For visualizing training progress and results.
+
+  
