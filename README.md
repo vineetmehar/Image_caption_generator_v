@@ -1,4 +1,4 @@
-# Image Captioning with Deep Learning
+# Image Caption Generator
 
 This project implements an image captioning model using deep learning. It extracts features from images using Convolutional Neural Networks (CNN) and generates descriptive captions with Long Short-Term Memory (LSTM) networks.
 
